@@ -66,12 +66,10 @@ before_script:
     - cd $theme_dir
     # After CodeSniffer install you should refresh your path.
     - phpenv rehash
-    # Install JSCS: JavaScript Code Style checker
+    # Install JSCS: JavaScript Code Style checker and JSHint, a JavaScript Code Quality Tool
     # @link http://jscs.info/
-    - npm install -g jscs
-    # Install JSHint, a JavaScript Code Quality Tool
     # @link http://jshint.com/docs/
-    - npm install -g jshint
+    - npm install
     - wget https://develop.svn.wordpress.org/trunk/.jshintrc
 
 # Run test script commands.
